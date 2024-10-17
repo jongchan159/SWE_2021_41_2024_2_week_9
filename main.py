@@ -20,3 +20,5 @@ def twoSum(nums: List[int], target: int) -> List[int]:
         if subNum in numDic: # subNum값이 존재하는지 check
             return [numDic[subNum], i] # 존재하면 subNum의 인덱스와 현재 인덱스를 반환
         numDic[nums[i]] = i # 못찾으면 Key : nums[i](i번째 값), Value = i(현재 인덱스) 형태로 저장
+    # 발견 실패 시
+    return []
